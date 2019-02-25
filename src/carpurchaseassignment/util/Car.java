@@ -24,17 +24,9 @@ public abstract class Car{
     public int getPrice(){
         return price;
     }
-    
+    //abstract method of resale value as it is different for different car
     public abstract int resaleValue();
 }
 
-/**
- * 
- *car hyundai, toyota and maruti will extend Car class and override ResaleValue
- * Hyundai will have a resale value of 40% of the price
- * Maruti will have a resale value of 60% of the total price
- * Toyota will have a resale value of 80% of the total price
- * 
- */
 
 

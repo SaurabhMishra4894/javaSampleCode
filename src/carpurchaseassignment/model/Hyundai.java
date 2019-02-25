@@ -12,7 +12,9 @@ public class Hyundai extends Car{
      * 
      * Hyundai constructor which will get values while Initializing
      * 
-     * @param 
+     * @param carId int value as CarId
+     * @param carModel String value for CarModel
+     * @param carPrice int value for carPrice
      * 
      */
     
@@ -22,7 +24,7 @@ public class Hyundai extends Car{
         this.price = carPrice;
         
     }
-    //overriding Resale value for Hyundai
+    //overriding Resale value for Hyundai as 40% of Price
     @Override
     public int resaleValue(){
         return (int) (0.4*getPrice());

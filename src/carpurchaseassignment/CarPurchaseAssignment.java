@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package carpurchaseassignment;
 
 /**
@@ -19,15 +15,22 @@ import java.util.ArrayList;
  * 
  * 
  * Main Class is the first class to get executed.
+ * 
+ * 
  * The class aims at showing the menu to the user and redirect user to the desired function
+ * 
+ * 
  * case : ADD_NEW_CUSTOMER  add new customer after taking ID and NAME from user
  * case : ADD_CAR_TO_CUSTOMER add car to customer after taking ID of the user for which car is added
  * case : LIST-CUSTOMERS list all the customers with their details such as name/cars 
  * case : LIST_CUSTOMER list the customer details after taking the id of the customer
  * case : GENERATE_PRIZES generate Prizes with following logic
- * -------- Admin will input 3 Id of Users Valid/Invalid. System will generate 6 random Id of existing users if User count is greater than 6
+ * 
+ * -------- Admin will input 3 Id of Users Valid/Invalid. System will generate 6
+ * random Id of existing users if User count is greater than 6
  * --------else existing customers will be system generated Id
- * --------System will then print details of the user who will be common in system generated ID and 
+ * --------System will then print details of the user who will be common in 
+ * system generated ID and 
  * 
  *
  */
@@ -40,6 +43,7 @@ public final class CarPurchaseAssignment {
     private static final int GENERATE_PRIZES = 5;
     
     /**
+     * 
      * Main function Used with switch case for User input
      * 
      * Validate Class is Used for Validation
@@ -93,7 +97,10 @@ public final class CarPurchaseAssignment {
                 int secondId = validate.readValidatedInt();
                 System.out.println("Enter Third id");
                 int thirdId = validate.readValidatedInt();
+                
+                //List of 3 Ids entered by the admin to generate Prize
                 ArrayList<Integer> adminId = new ArrayList<>();
+                
                 adminId.add(firstId);
                 adminId.add(secondId);
                 adminId.add(thirdId);

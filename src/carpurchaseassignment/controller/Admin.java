@@ -207,6 +207,7 @@ public final class Admin{
         System.out.println(" --------------------------------- ");
         
     }
+    
     /**
      * 
      * Method GeneratePrize generates the prizes to the user
@@ -216,7 +217,9 @@ public final class Admin{
      * @param adminList ArrayList<Integer> This is the input which has three Id's entered by the admin
      * 
      */
+    
     public void generatePrize(final ArrayList<Integer> adminList){
+        
         ArrayList<Customer> customers = customerList;
         ArrayList<Integer> newRandomElements =new ArrayList<>();
         Collections.shuffle(customers);

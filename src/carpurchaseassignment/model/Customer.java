@@ -14,9 +14,7 @@ import java.util.ArrayList;
  * Class customer defines the properties of the customer.
  * Customer will have an id ,name and list of car.
  * 
- * @param int The id of the user
- * @param String The name of the user
- * 
+ 
  * listOfCars while creating user will be empty later on user can add car
  * 
  */
@@ -25,6 +23,15 @@ public final class Customer{
     private final String Name;
     private final ArrayList<Car> listOfCars;
 
+ /**
+  * 
+  * Customer constructor to get values of Id and Name
+  * 
+  * @param Id int The id of the user
+  * @param Name String The name of the user
+  * 
+  * 
+  */
     public Customer(final int Id,final String Name) {
         this.Id = Id;
         this.Name = Name;
