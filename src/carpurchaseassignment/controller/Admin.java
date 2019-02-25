@@ -82,7 +82,8 @@ public final class Admin{
      * 
      */
     public void listCustomers(){
-        Comparator<Customer> comparator = (Customer aCustomer, Customer bCustomer) -> aCustomer.getName().compareTo(bCustomer.getName());
+        Comparator<Customer> comparator = (Customer aCustomer, Customer bCustomer) 
+                -> aCustomer.getName().compareTo(bCustomer.getName());
         Collections.sort(customerList,comparator);
         customerList.stream().forEach((customerlist) -> {
             userDetail(customerlist.getId());
